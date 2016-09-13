@@ -40,3 +40,44 @@ nav {
 .copyright {
   text-align: center
 }
+
+@media screen and (max-width: 700px) {
+    .btnmenu {
+        position: absolute;
+        top: 25px;
+        right: 15px;
+    }
+    .menu, .subtitle {display: none;}
+}
+
+@media screen and (min-width: 701px) {
+    .btnmenu {
+        display: none;
+    }
+    /*ojo!!! esto es para que se vea al cambiar, claro!!!!*/
+    #menu, #subtitle {display: block !important;}
+}
+
+/*caos de media queries*/
+
+
+.container {
+  margin: 0 5px;
+}
+@media screen and (min-width:701px) {
+  .container {
+    width: 690px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width:1001px) {
+  .container {
+    width: 990px;
+  }
+}
+
+@media screen and (min-width:1201px) {
+  .container {
+    width: 1190px;
+  }
+}
